@@ -1,6 +1,3 @@
-[submodule "tools/stlink"]
-	path = tools/stlink
-	url = https://github.com/texane/stlink
 [submodule "core/mecrisp-stellaris"]
 	path = core/mecrisp-stellaris
 	url = https://github.com/jeelabs/mecrisp-stellaris
