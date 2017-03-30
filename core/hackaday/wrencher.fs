@@ -36,7 +36,6 @@ cr ;
 ."    /.,'               `.:.   " cr
 cr ;
 
-( Here's how to integrate it into the startup 
-: init ."   =<[ Hackaday Edition ]>=" wrencher-12 ;
-)
+\  Here's how to integrate it into the startup 
+\ : init ."   =<[ Hackaday Edition ]>=" wrencher-12 ;
 
