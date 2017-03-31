@@ -27,7 +27,7 @@ include embello/explore/1608-forth/flib/stm32f1/hal.fs
 \ include embello/explore/1608-forth/flib/stm32f1/rtc.fs
 cornerstone <<embello-board>>
 
-\ include hackaday/LED.fs
+include hackaday/LED.fs
 include hackaday/prompt.fs
 include hackaday/utilities.fs
 include hackaday/wrencher.fs
