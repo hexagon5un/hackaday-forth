@@ -4,11 +4,11 @@ This is the version of Mecrisp-Stellaris that I'm using to go along with my arti
 
 ## Quick Start
 
-If you're just interested in flashing a Forth into an STM32F103 board and running some demos, there's a `Makefile` here that will set you right up.  
+If you're just interested in flashing a Forth into an STM32F103 board and running some demos, 
 
-1. Connect up the programmer and type `make Hackaday` to load up the all-bells-and-whistles version of Mecrisp-Stellaris.  There's hookup instructions in the `ROMs` directory, and the programs you need are in `tools`.
-
-2.  Have a look in the `demos` folder or the `Makefile` for one that tickles your fancy.  You can't lose with `make blinky`.
+1. Go get [Texane]'s [stlink tools](https://github.com/texane/stlink).  Install.
+2. Flash in `mecrisp-stellaris-hackaday-edition.bin` from the `ROMs` directory.
+3. Have a look in the `demos` folder.  
 
 ## Demos
 
