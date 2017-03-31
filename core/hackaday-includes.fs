@@ -18,7 +18,7 @@ cornerstone <<mecrisp-common>>
 \ Replicating a large part of embello/g6s/board.fs
 4 constant io-ports  \ A..D  -- why not in pins64?
 include embello/explore/1608-forth/flib/stm32f1/io.fs
-include embello/explore/1608-forth/flib/pkg/pins64.fs
+include embello/explore/1608-forth/flib/pkg/pins48.fs
 include embello/explore/1608-forth/flib/stm32f1/hal.fs
 \ include embello/explore/1608-forth/flib/stm32f1/spi.fs
 \ include embello/explore/1608-forth/flib/stm32f1/timer.fs
