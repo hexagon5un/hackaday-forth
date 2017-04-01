@@ -1,0 +1,22 @@
+[[ $1 ]] && cellname=$1 || cellname="cell"
+
+## Start loop, logging
+# echo " " | ncat 192.168.1.17 23
+# echo " " | ncat 192.168.1.17 23
+# echo "sample" | ncat 192.168.1.17 23
+ncat 192.168.1.17 23 | tee log
+
+## Scale, plot
+echo "voltage, current" > log.csv
+head -n -1 log >> log.csv
+Rscript plot.R 
+
+## save for posterity
+timenow=`date +%s` 
+mv solarcell.png solarcell_${cellname}_${timenow}.png
+mv log.csv log_${cellname}_${timenow}.csv
+
+## view it
+sxiv solarcell_${cellname}_${timenow}.png
+
+

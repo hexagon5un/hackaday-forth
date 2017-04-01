@@ -1,0 +1,16 @@
+ncat 192.168.1.17 23 | tee multilog_output
+csplit -z -f 'mlog' -b '%02d' multilog_output /####/ {*}
+for f in mlog* 
+do
+	echo "voltage, current" > log.csv
+	head -n -1 $f | tail -n +2  >> log.csv
+	Rscript plot.R 
+
+	timenow=`date +%s` 
+	mv solarcell.png solarcell_${f}_${timenow}.png
+	mv log.csv log_${f}_${timenow}.csv
+
+	## view it
+	sxiv solarcell_${f}_${timenow}.png
+
+done
