@@ -12,7 +12,7 @@ compiletoflash
 include embello/explore/1608-forth/flib/mecrisp/hexdump.fs
 include embello/explore/1608-forth/flib/mecrisp/calltrace.fs
 include embello/explore/1608-forth/flib/mecrisp/cond.fs
-include embello/explore/1608-forth/flib/mecrisp/multi.fs
+\ include embello/explore/1608-forth/flib/mecrisp/multi.fs
 cornerstone <<mecrisp-common>>
 
 \ Replicating a large part of embello/g6s/board.fs
@@ -27,6 +27,7 @@ include embello/explore/1608-forth/flib/stm32f1/hal.fs
 \ include embello/explore/1608-forth/flib/stm32f1/rtc.fs
 cornerstone <<embello-board>>
 
+include hackaday/multi.fs
 include hackaday/LED.fs
 include hackaday/prompt.fs
 include hackaday/utilities.fs
