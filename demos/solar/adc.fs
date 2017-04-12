@@ -1,4 +1,4 @@
-\ include adc-registers.fs
+include adc-registers.fs
 
 \   PA0..7 => 0..7, PB0..1 => 8..9, PC0..5 => 10..15
 
@@ -32,9 +32,9 @@
 
 : adc.set-sample-rate 	( mode ain# -- ) 
 			dup 10 < 
-			if 3 * lshift adc1-smpr2 ( AIN0-9 ) 
-			else 10 - 3 * lshift adc1-smpr1 ( AIN10-17 )
-			then bis! ;
+			if adc1-smpr2 >r ( AIN0-9 ) 
+			else 10 - adc1-smpr1 >r ( AIN10-17 )
+			then 3 * %111 over lshift r@ bic! lshift r> bis! ;
 
 ( Note: sample rate cleared by adc.init.  Call this afterwards. )
 : adc.pin-setup   	( pin ain# -- ) 
