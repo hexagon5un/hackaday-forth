@@ -26,4 +26,8 @@
 : bin. 0 binary <# [char] ] hold 8 0 do _nibble loop bl hold [char] [ hold #> type decimal ;
 : hex. ( 32-bit number ) 0 hex <# _byte16 _byte16 _byte16 # # #> type decimal ;
 
+\ free memory / flash space: adapted from Embello libs
+
+: flashfree compiletoram? $10000 compiletoflash here - swap if compiletoram then ; 
+: ramfree  compiletoram? not flashvar-here compiletoram here - swap if compiletoflash then ; 
 

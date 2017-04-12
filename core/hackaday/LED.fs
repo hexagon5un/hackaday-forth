@@ -2,7 +2,8 @@
 
 \ define the pin.  
 \ Change if you have different hardware -- the rest should work
-PC13 constant led.pin
+PC13 constant led.pin ( for blue pill boards )
+\ PA1 constant led.pin ( for hytiny boards )
 
 \ set output mode, push-pull driver
 : led.init   omode-pp led.pin io-mode! ;
