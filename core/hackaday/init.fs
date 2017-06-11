@@ -18,9 +18,6 @@
 
  \ requires LED.fs
  led.init
- 3 0 do \ blink to say hi
- led.on 100 ms led.off 100 ms
- loop
  
  ." ok." cr
 ;
