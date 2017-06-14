@@ -33,7 +33,7 @@ include hackaday/prompt.fs
 include hackaday/utilities.fs
 include hackaday/wrencher.fs
 include hackaday/init.fs
-cornerstone <<hackaday-extras>>
+cornerstone <<hackaday>>
 
 compiletoram
 
