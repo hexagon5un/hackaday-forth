@@ -19,6 +19,6 @@
  \ requires LED.fs
  led.init
  led.off
- 
+
  ." ok." cr
 ;

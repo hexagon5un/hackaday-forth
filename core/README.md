@@ -10,7 +10,7 @@ Here you'll find all the code (and more!) to build up a very respectable Forth s
 5. Hit or type `reset` and you should see the Jolly Wrencher.  You're on your way!
 
 <pre>
-Mecrisp-Stellaris RA 2.3.6 for STM32F103 by Matthias Koch
+Mecrisp-Stellaris RA 2.3.8 for STM32F103 by Matthias Koch
 plus a lot of code from the Embello Forth libs by [jcw]
 (http://embello.jeelabs.org/flib/)
 ram/flash: 19336 31744 free 
