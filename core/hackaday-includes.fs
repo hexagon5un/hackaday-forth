@@ -3,9 +3,9 @@
 
 \ This includes a hard flash reset down to Mecrisp base ($5000)
 \ Then replaces eraseflash so that it doesn't get overwritten
-include hackaday/cornerstone.fs
+\ include hackaday/cornerstone.fs
 
-eraseflash
+\ eraseflash
 compiletoflash
 
 \ Embello versions of many of the mecrisp common libs
