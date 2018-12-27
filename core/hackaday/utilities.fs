@@ -14,6 +14,10 @@
 	begin dup 6 + ctype space dictionarynext until drop
 ;
 
+\ loop a function n times from the command line
+: loops ( n -- ) ' swap 0 ?do dup execute loop drop ;
+\ usage: if you've got a word named "foo": 10 loops foo 
+
 \ quick print variable
 : ? @ . ; 
 \ print true / false

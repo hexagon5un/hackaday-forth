@@ -20,6 +20,7 @@ cornerstone <<mecrisp-common>>
 include embello/explore/1608-forth/flib/stm32f1/io.fs
 include embello/explore/1608-forth/flib/pkg/pins48.fs
 include embello/explore/1608-forth/flib/stm32f1/hal.fs
+include embello/explore/1608-forth/flib/stm32f1/uart2.fs
 \ include embello/explore/1608-forth/flib/stm32f1/spi.fs
 \ include embello/explore/1608-forth/flib/stm32f1/timer.fs
 \ include embello/explore/1608-forth/flib/stm32f1/pwm.fs
