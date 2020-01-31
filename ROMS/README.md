@@ -60,6 +60,8 @@ I've included a few ROM images, all of which are current as of March 2017.
 
 * `mecrisp-stellaris-hackaday-edition.bin` is a good basis for getting started.  I've added some useful tools, multitasking, GPIO support, and some other frills from the [Mecrisp-Stellaris/common](https://github.com/jeelabs/mecrisp-stellaris/tree/master/common) directory as well as JeeLab's [embello libraries](https://github.com/jeelabs/embello/tree/master/explore/1608-forth).  If you want to poke around in the code there, don't forget to run `git submodule update --init --recursive` to pull down the latest versions.
 
+* The USB build sets up a serial port over USB, so you can use the board's two serial ports for other things.  One annoyance is that it will de-enumerate when you reset the chip, so you might have to unplug/replug.  Another is that the clock speed isn't 72 MHz, but I think 36 MHz -- don't hold me to it.  You might find that timing-sensitive things are off by a factor of two, and you might need to fudge baud rates accordingly, for instance.  This branch is _definitely_ work in progress, and is honestly less convenient than just using a usb/serial adapter, IMO.
+
 Anyway, everything is extensible and layered.  If you've loaded the Hackaday version, and want to drop down to the bare Mecrisp Stellaris build, you can type `eraseflash` and you're set.  Other waypoints / cornerstones in the flash memory are delimited with `<<<angle-brackets>>>` and typing the relevant name will clear flash down to that point.
 
 
